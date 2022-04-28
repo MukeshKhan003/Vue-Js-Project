@@ -1,0 +1,17 @@
+<!-- vue js cdn link -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<!-- Render HTML Element -->
+<div id="appMain">
+    <p v-text="message">Hello World</p>
+</div>
+
+<!-- Vue Instance creation -->
+<script>
+    new Vue({
+        el: '#appMain',
+        data: {
+            message: 'vue js v-text'
+        }
+    })
+</script>
