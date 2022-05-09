@@ -1,0 +1,21 @@
+<!-- vue js cdn link -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<!-- Render HTML Element -->
+<div id="appMain">
+    <template v-if="isShow">
+        <h1>Vue Js Awesome</h1>
+        <h1>have Virtual DOM</h1>
+        <h1>Single Page Application</h1>
+    </template>
+</div>
+
+<!-- Vue Instance creation -->
+<script>
+    new Vue({
+        el: '#appMain',
+        data: {
+            isShow: true
+        }
+    })
+</script>
