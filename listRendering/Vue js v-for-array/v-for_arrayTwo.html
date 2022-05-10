@@ -1,0 +1,27 @@
+<!-- vue js cdn link -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<!-- Render HTML Element -->
+<div id="appMain">
+    <div v-for="company in companyDetails">
+        <template v-for="employeeList of company.employeeDetails">
+            <p>{{company.companyName}} - {{employeeList.name}} - {{employeeList.domain}}</p>
+        </template>
+    </div>
+</div>
+
+<!-- Vue Instance creation -->
+<script>
+    new Vue({
+        el: '#appMain',
+        data: {
+            companyDetails: [{
+                companyName: 'Mukesh Consultant',
+                employeeDetails: [{id: 1, name: 'Mukesh', domain: 'Js'},
+                {id: 2, name: 'Dhaya', domain: 'PHP'},
+                {id: 1, name: 'Udaya', domain: 'UI/UX'}],
+                address: 'Chennai'
+            }]
+        }
+    })
+</script>

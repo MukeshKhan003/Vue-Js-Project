@@ -1,0 +1,19 @@
+<!-- vue js cdn link -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+<!-- Render HTML Element -->
+<div id="appMain">
+    <template v-for="(fruitsList, index) of fruits">
+        <p>{{index}}-{{fruitsList}}</p>
+    </template>
+</div>
+
+<!-- Vue Instance creation -->
+<script>
+    new Vue({
+        el: '#appMain',
+        data: {
+            fruits: ['apple', 'orange', 'banana']
+        }
+    })
+</script>
